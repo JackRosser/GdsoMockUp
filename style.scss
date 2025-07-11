@@ -1,0 +1,14 @@
+// BS START
+@import "lib/bootstrap/scss/functions";
+@import "lib/bootstrap/scss/_variables.scss";
+
+// CUSTOM PARTIALS
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_font.scss";
+@import "partials/_colors.scss";
+@import "partials/_containers.scss";
+
+// BS END
+@import "lib/bootstrap/scss/mixins";
+@import "lib/bootstrap/scss/bootstrap";

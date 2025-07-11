@@ -1,0 +1,24 @@
+$primary: #ff5a1e;
+$light-gray: #f5f5f0;
+$dark: #46413c;
+$violet: #873773;
+$acqua: #b4cdbe;
+$isys-gray: #c8c3b9;
+$primary-light: #ffe9d1;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "light-gray": $light-gray,
+    "dark": $dark,
+    "violet": $violet,
+    "acqua": $acqua,
+    "isys-gray": $isys-gray,
+    "primary-light": $primary-light
+  )
+);
+
+body {
+  background-color: $primary-light !important;
+}
