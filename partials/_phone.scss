@@ -1,0 +1,21 @@
+.screen {
+  position: relative;
+  border: 10px solid $dark;
+  width: 295px;
+  height: 600px;
+  box-shadow: $custom-shadow;
+  z-index: 1000;
+  border-radius: 3rem;
+  background-color: $primary-light;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    background-color: $dark;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+}
