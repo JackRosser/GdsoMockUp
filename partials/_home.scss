@@ -1,8 +1,8 @@
 .home {
-  &.close {
-    display: none;
+  &.open {
+    display: flex;
   }
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;

@@ -288,13 +288,13 @@ body {
   text-decoration: none;
 }
 .home {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
 }
-.home.close {
-  display: none;
+.home.open {
+  display: flex;
 }
 .home h1, .home .h1, .home h2, .home .h2, .home h3, .home .h3 {
   margin: 0;
