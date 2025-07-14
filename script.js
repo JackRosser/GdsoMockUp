@@ -27,18 +27,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // NAVIGAZIONE
 
+  // HOME
   const homeButton = document.querySelector(".homeBtn");
   const homePage = document.querySelector(".home");
+  // ORDINI
   const ordersButtons = document.querySelectorAll(".ordersBtn");
   const ordersPage = document.querySelector(".orders");
+  // MAPPA
+  const percorsoButton = document.querySelector("#percorso");
+  const mappaPage = document.querySelector(".percorso");
+
+  // EVENTI
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
     ordersPage.classList.remove("open");
+    mappaPage.classList.remove("open");
   });
   ordersButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      homePage.classList.remove("open");
       ordersPage.classList.add("open");
+      homePage.classList.remove("open");
+      mappaPage.classList.remove("open");
     });
+  });
+  percorsoButton.addEventListener("click", () => {
+    mappaPage.classList.add("open");
+    ordersPage.classList.remove("open");
   });
 });

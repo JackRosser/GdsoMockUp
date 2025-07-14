@@ -63,7 +63,7 @@
             </div>
             <!-- Fine Home -->
             <!--Inizio ordini-->
-            <div class="orders open">
+            <div class="orders">
               <h1>Ordini disponibili</h1>
               <h2><span>Pneumatici</span><span>piccoli</span></h2>
               <table>
@@ -125,10 +125,15 @@
                   <option>Autotecnica Varese</option>
                   <option>Pneumatici S.P.A.</option>
                 </select>
-                <button class="btn btn-primary">Avvia percorso</button>
+                <button class="btn btn-primary" id="percorso">Avvia percorso</button>
               </div>
             </div>
             <!--Fine ordini-->
+            <!--Inizio Percorso-->
+            <div class="percorso open">
+              <img src="images/sample_map.jpg" />
+            </div>
+            <!--Fine Percorso-->
           </div>
 
           <div class="navigation">
@@ -141,12 +146,15 @@
     </main>
 
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js" defer></script>
     <!-- BootStrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&loading=async" async defer></script>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
