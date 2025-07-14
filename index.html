@@ -138,10 +138,20 @@
             <!--Inizio compilazione-->
             <div class="compilazione open">
               <form>
-                <div class="evadibile">
-                  <span class="evadibile-si">Evadibile</span>
+                <label class="form-label" for="eva">Fattibilità ordine</label>
+                <div class="evadibile" id="#eva">
+                  <span class="evadibile-si ok">Evadibile</span>
                   <span class="evadibile-no">Non evadibile</span>
                 </div>
+                <label class="form-label" for="foto">Compilazione FIR</label>
+                <div class="photo-box">
+                  <div class="row row-cols-3">
+                    <div class="col p-2"><img src="images/formulario_01.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_02.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_03.png" /><span>X</span></div>
+                  </div>
+                </div>
+                <span class="avvia-fotocamera"><i class="bi bi-camera"></i></span>
               </form>
             </div>
             <!--Fine compilazione-->
@@ -149,7 +159,6 @@
 
           <div class="navigation">
             <a href="#" class="homeBtn"><i class="bi bi-house-door-fill"></i></a>
-            <a href="#"><i class="bi bi-upc-scan"></i></a>
             <a href="#" class="ordersBtn"><i class="bi bi-files"></i></a>
           </div>
         </div>

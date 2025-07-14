@@ -7,6 +7,13 @@
   height: 100%;
   padding: 1rem;
   & form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    & .form-label {
+      font-size: 0.8rem;
+      margin: 0;
+    }
     width: 100%;
     & .evadibile {
       display: flex;
@@ -26,6 +33,41 @@
       }
       & .evadibile-no {
         background-color: $danger;
+      }
+    }
+    & .avvia-fotocamera {
+      color: $primary;
+      font-size: 2rem;
+      & i {
+        &:active {
+          color: $dark;
+        }
+      }
+    }
+    & .photo-box {
+      display: flex;
+      gap: 0.5rem;
+      & .col {
+        position: relative;
+      }
+      &.hidden {
+        display: none;
+      }
+      & span {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: $danger;
+        background-color: $dark;
+        border-radius: 50%;
+        padding: 0.3rem 0.5rem;
+        font-weight: bold;
+        font-size: 0.5rem;
+      }
+      & img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: $custom-shadow;
       }
     }
   }

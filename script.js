@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const compilationPage = document.querySelector(".compilazione");
   const evadibileSi = document.querySelector(".evadibile-si");
   const evadibileNo = document.querySelector(".evadibile-no");
+  const camera = document.querySelector(".avvia-fotocamera");
+  const photoBox = document.querySelector(".photo-box");
   // EVENTI
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
@@ -70,5 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
   evadibileNo.addEventListener("click", () => {
     evadibileNo.classList.add("ok");
     evadibileSi.classList.remove("ok");
+  });
+  camera.addEventListener("click", () => {
+    photoBox.classList.remove("hidden");
   });
 });
