@@ -47,17 +47,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const cameraNc = document.querySelector(".avvia-fotocamera-nc");
   const photoBoxNc = document.querySelector(".photo-box-nc");
   const inviaFirBtn = document.querySelector("#inviaFir");
+  // PAGINA ORDINE
+  const orderButtonFromNav = document.querySelector("#goToOrder");
+  const orderPage = document.querySelector(".pagina-ordine");
+  const inviaFirBtnDaOrdine = document.querySelector("#inviaFirDaOrdine");
+  const avviaPercorsoBtnDaOrdine = document.querySelector("#avviaPercorsoDaOrdine");
   // EVENTI
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
     ordersPage.classList.remove("open");
     mappaPage.classList.remove("open");
+    orderPage.classList.remove("open");
+    compilationPage.classList.remove("open");
   });
   ordersButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      ordersPage.classList.add("open");
       homePage.classList.remove("open");
+      ordersPage.classList.add("open");
       mappaPage.classList.remove("open");
+      orderPage.classList.remove("open");
+      compilationPage.classList.remove("open");
     });
   });
   percorsoButton.addEventListener("click", () => {
@@ -85,5 +94,20 @@ document.addEventListener("DOMContentLoaded", () => {
   inviaFirBtn.addEventListener("click", () => {
     homePage.classList.add("open");
     compilationPage.classList.remove("open");
+  });
+  orderButtonFromNav.addEventListener("click", () => {
+    orderPage.classList.add("open");
+    homePage.classList.remove("open");
+    ordersPage.classList.remove("open");
+    mappaPage.classList.remove("open");
+    compilationPage.classList.remove("open");
+  });
+  inviaFirBtnDaOrdine.addEventListener("click", () => {
+    compilationPage.classList.add("open");
+    orderPage.classList.remove("open");
+  });
+  avviaPercorsoBtnDaOrdine.addEventListener("click", () => {
+    mappaPage.classList.add("open");
+    orderPage.classList.remove("open");
   });
 });

@@ -522,7 +522,6 @@ body {
   font-size: 0.8rem;
   box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.3);
   border: none;
-  padding: 0.8rem;
 }
 .compilazione form textarea::-moz-placeholder {
   color: #c8c3b9;
@@ -556,7 +555,7 @@ body {
 }
 .pagina-ordine h3 i, .pagina-ordine .h3 i, .pagina-ordine h3 span, .pagina-ordine .h3 span {
   color: #ff5a1e;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /*!
