@@ -54,7 +54,7 @@
               <div class="custom-offcanvas-backdrop"></div>
             </div>
             <!-- Inizio Home -->
-            <div class="home">
+            <div class="home open">
               <h1><span>Benvenuto in</span><span>NomeApplicazione</span></h1>
               <h2><i class="bi bi-truck"></i><span>Targa registrata</span><span>FL728JV</span></h2>
               <h3>
@@ -136,7 +136,7 @@
             </div>
             <!--Fine Percorso-->
             <!--Inizio compilazione-->
-            <div class="compilazione open">
+            <div class="compilazione">
               <form>
                 <label class="form-label" for="eva">Fattibilità ordine</label>
                 <div class="evadibile" id="#eva">
@@ -144,7 +144,7 @@
                   <span class="evadibile-no">Non evadibile</span>
                 </div>
                 <label class="form-label" for="foto">Compilazione FIR</label>
-                <div class="photo-box">
+                <div class="photo-box hidden">
                   <div class="row row-cols-3">
                     <div class="col p-2"><img src="images/formulario_01.png" /><span>X</span></div>
                     <div class="col p-2"><img src="images/formulario_02.png" /><span>X</span></div>
@@ -152,6 +152,19 @@
                   </div>
                 </div>
                 <span class="avvia-fotocamera"><i class="bi bi-camera"></i></span>
+                <label class="form-label" for="fotoNc">Non conformità</label>
+                <div class="photo-box-nc hidden">
+                  <div class="row row-cols-3">
+                    <div class="col p-2"><img src="images/formulario_01.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_02.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_03.png" /><span>X</span></div>
+                  </div>
+                </div>
+                <span class="avvia-fotocamera-nc"><i class="bi bi-camera"></i></span>
+                <textarea class="form-control" id="note" rows="3" placeholder="Inserisci qui eventuali note..."></textarea>
+                <div class="w-100 d-flex justify-content-end mt-4">
+                  <button id="inviaFir" class="btn btn-primary text-white">Invia</button>
+                </div>
               </form>
             </div>
             <!--Fine compilazione-->

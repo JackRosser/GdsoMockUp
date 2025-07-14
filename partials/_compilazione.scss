@@ -35,7 +35,8 @@
         background-color: $danger;
       }
     }
-    & .avvia-fotocamera {
+    & .avvia-fotocamera,
+    & .avvia-fotocamera-nc {
       color: $primary;
       font-size: 2rem;
       & i {
@@ -44,7 +45,8 @@
         }
       }
     }
-    & .photo-box {
+    & .photo-box,
+    & .photo-box-nc {
       display: flex;
       gap: 0.5rem;
       & .col {
@@ -68,6 +70,15 @@
         max-width: 100%;
         border-radius: 10px;
         box-shadow: $custom-shadow;
+      }
+    }
+    & textarea {
+      font-size: 0.8rem;
+      box-shadow: $custom-shadow;
+      border: none;
+      padding: 0.8rem;
+      &::placeholder {
+        color: $isys-gray;
       }
     }
   }

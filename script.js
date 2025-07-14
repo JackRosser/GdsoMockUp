@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const evadibileNo = document.querySelector(".evadibile-no");
   const camera = document.querySelector(".avvia-fotocamera");
   const photoBox = document.querySelector(".photo-box");
+  const cameraNc = document.querySelector(".avvia-fotocamera-nc");
+  const photoBoxNc = document.querySelector(".photo-box-nc");
+  const inviaFirBtn = document.querySelector("#inviaFir");
   // EVENTI
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
@@ -75,5 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   camera.addEventListener("click", () => {
     photoBox.classList.remove("hidden");
+  });
+  cameraNc.addEventListener("click", () => {
+    photoBoxNc.classList.remove("hidden");
+  });
+  inviaFirBtn.addEventListener("click", () => {
+    homePage.classList.add("open");
+    compilationPage.classList.remove("open");
   });
 });

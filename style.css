@@ -485,24 +485,24 @@ body {
 .compilazione form .evadibile .evadibile-no {
   background-color: #dc3545;
 }
-.compilazione form .avvia-fotocamera {
+.compilazione form .avvia-fotocamera, .compilazione form .avvia-fotocamera-nc {
   color: #ff5a1e;
   font-size: 2rem;
 }
-.compilazione form .avvia-fotocamera i:active {
+.compilazione form .avvia-fotocamera i:active, .compilazione form .avvia-fotocamera-nc i:active {
   color: #46413c;
 }
-.compilazione form .photo-box {
+.compilazione form .photo-box, .compilazione form .photo-box-nc {
   display: flex;
   gap: 0.5rem;
 }
-.compilazione form .photo-box .col {
+.compilazione form .photo-box .col, .compilazione form .photo-box-nc .col {
   position: relative;
 }
-.compilazione form .photo-box.hidden {
+.compilazione form .photo-box.hidden, .compilazione form .photo-box-nc.hidden {
   display: none;
 }
-.compilazione form .photo-box span {
+.compilazione form .photo-box span, .compilazione form .photo-box-nc span {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -513,10 +513,22 @@ body {
   font-weight: bold;
   font-size: 0.5rem;
 }
-.compilazione form .photo-box img {
+.compilazione form .photo-box img, .compilazione form .photo-box-nc img {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.3);
+}
+.compilazione form textarea {
+  font-size: 0.8rem;
+  box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.3);
+  border: none;
+  padding: 0.8rem;
+}
+.compilazione form textarea::-moz-placeholder {
+  color: #c8c3b9;
+}
+.compilazione form textarea::placeholder {
+  color: #c8c3b9;
 }
 
 /*!
