@@ -558,6 +558,67 @@ body {
   margin-left: 0.5rem;
 }
 
+.assistenza {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+.assistenza.open {
+  display: flex;
+}
+.assistenza .chat-view {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: auto;
+}
+.assistenza .chat-view .assistente, .assistenza .chat-view .operatore {
+  padding: 1rem;
+  max-width: 80%;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #ff5a1e;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.3);
+}
+.assistenza .chat-view .assistente span, .assistenza .chat-view .operatore span {
+  font-weight: bold;
+}
+.assistenza .chat-view .operatore {
+  margin-left: auto;
+  text-align: right;
+  background-color: #ff5a1e;
+  color: white;
+}
+.assistenza .chatbox {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+.assistenza .chatbox span {
+  color: white;
+  background-color: #ff5a1e;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-inline: 0.6rem;
+}
+.assistenza .chatbox input {
+  max-width: 80%;
+}
+.assistenza .chatbox input:focus {
+  border-color: #ff5a1e;
+  box-shadow: 0 0 0 0.25rem rgba(255, 90, 30, 0.25);
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors

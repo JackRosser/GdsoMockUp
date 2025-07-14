@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const percorsoButton = document.querySelector("#percorso");
   const mappaPage = document.querySelector(".percorso");
   const destinazioneButton = document.querySelector("#destinazione");
+  // ASSISTENZA
+  const assistenzaButtons = document.querySelectorAll(".assistenzaBtn");
+  const assistenzaPage = document.querySelector(".assistenza");
 
   // COMPILAZIONE
   const compilationPage = document.querySelector(".compilazione");
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mappaPage.classList.remove("open");
     orderPage.classList.remove("open");
     compilationPage.classList.remove("open");
+    assistenzaPage.classList.remove("open");
   });
   ordersButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -67,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mappaPage.classList.remove("open");
       orderPage.classList.remove("open");
       compilationPage.classList.remove("open");
+      assistenzaPage.classList.remove("open");
     });
   });
   percorsoButton.addEventListener("click", () => {
@@ -101,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ordersPage.classList.remove("open");
     mappaPage.classList.remove("open");
     compilationPage.classList.remove("open");
+    assistenzaPage.classList.remove("open");
   });
   inviaFirBtnDaOrdine.addEventListener("click", () => {
     compilationPage.classList.add("open");
@@ -109,5 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
   avviaPercorsoBtnDaOrdine.addEventListener("click", () => {
     mappaPage.classList.add("open");
     orderPage.classList.remove("open");
+  });
+  assistenzaButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      homePage.classList.remove("open");
+      ordersPage.classList.remove("open");
+      mappaPage.classList.remove("open");
+      orderPage.classList.remove("open");
+      compilationPage.classList.remove("open");
+      assistenzaPage.classList.add("open");
+    });
   });
 });
