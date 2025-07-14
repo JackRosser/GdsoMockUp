@@ -6,4 +6,26 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
+  & h1,
+  & h2 {
+    margin: 0;
+  }
+  & h1 {
+    font-size: 1.5rem;
+  }
+  & h2 {
+    display: flex;
+    gap: 0.5rem;
+    & span {
+      font-size: 1rem;
+      &:last-child {
+        font-weight: bold;
+        color: $primary;
+        text-transform: uppercase;
+      }
+    }
+  }
+  & table {
+    border: 1px solid red;
+  }
 }

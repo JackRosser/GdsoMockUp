@@ -9,6 +9,7 @@
   & h1,
   & h2,
   & h3 {
+    padding-inline: 1rem;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -36,18 +37,28 @@
   }
 
   & h3 {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 50px;
-    & span {
-      font-size: 1rem;
-    }
-    &:active {
-      background-color: $primary;
-      color: white;
+    & div {
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 50px;
+      padding: 1rem;
+      & i {
+        color: $primary;
+      }
+      & span {
+        font-size: 1rem;
+      }
+      &:active {
+        background-color: $primary;
+        color: white;
+        & i {
+          color: white;
+        }
+      }
     }
   }
 }
