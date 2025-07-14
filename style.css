@@ -332,6 +332,16 @@ body {
   color: white;
 }
 
+.orders {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.orders.open {
+  display: flex;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors

@@ -1,0 +1,9 @@
+.orders {
+  &.open {
+    display: flex;
+  }
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}

@@ -27,16 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // NAVIGAZIONE
 
-  const homeButton = document.querySelector("#home");
+  const homeButton = document.querySelector(".homeBtn");
   const homePage = document.querySelector(".home");
-  const ordersButton = document.querySelector("#home");
-  const ordersPage = document.querySelector(".home");
+  const ordersButtons = document.querySelectorAll(".ordersBtn");
+  const ordersPage = document.querySelector(".orders");
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
     ordersPage.classList.remove("open");
   });
-  ordersButton.addEventListener("click", () => {
-    homePage.classList.remove("open");
-    ordersPage.classList.add("open");
+  ordersButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      homePage.classList.remove("open");
+      ordersPage.classList.add("open");
+    });
   });
 });
