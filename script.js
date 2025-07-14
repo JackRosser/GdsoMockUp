@@ -36,7 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // MAPPA
   const percorsoButton = document.querySelector("#percorso");
   const mappaPage = document.querySelector(".percorso");
+  const destinazioneButton = document.querySelector("#destinazione");
 
+  // COMPILAZIONE
+  const compilationPage = document.querySelector(".compilazione");
+  const evadibileSi = document.querySelector(".evadibile-si");
+  const evadibileNo = document.querySelector(".evadibile-no");
   // EVENTI
   homeButton.addEventListener("click", () => {
     homePage.classList.add("open");
@@ -53,5 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
   percorsoButton.addEventListener("click", () => {
     mappaPage.classList.add("open");
     ordersPage.classList.remove("open");
+  });
+  destinazioneButton.addEventListener("click", () => {
+    compilationPage.classList.add("open");
+    mappaPage.classList.remove("open");
+  });
+  evadibileSi.addEventListener("click", () => {
+    evadibileSi.classList.add("ok");
+    evadibileNo.classList.remove("ok");
+  });
+  evadibileNo.addEventListener("click", () => {
+    evadibileNo.classList.add("ok");
+    evadibileSi.classList.remove("ok");
   });
 });

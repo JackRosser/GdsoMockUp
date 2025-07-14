@@ -432,7 +432,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.percorso .destinazione {
+.percorso #destinazione {
   position: absolute;
   bottom: 3rem;
   left: 0;
@@ -442,8 +442,41 @@ body {
   text-align: center;
   padding: 1rem;
 }
-.percorso .destinazione:active {
+.percorso #destinazione:active {
   background-color: #46413c;
+}
+
+.compilazione {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.compilazione.open {
+  display: flex;
+}
+.compilazione form {
+  width: 100%;
+}
+.compilazione form .evadibile {
+  display: flex;
+  justify-content: space-between;
+}
+.compilazione form .evadibile span {
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.compilazione form .evadibile span.ok {
+  opacity: 1;
+  box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.3);
+}
+.compilazione form .evadibile .evadibile-si {
+  background-color: #198754;
+}
+.compilazione form .evadibile .evadibile-no {
+  background-color: #dc3545;
 }
 
 /*!
