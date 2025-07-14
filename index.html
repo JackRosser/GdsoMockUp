@@ -19,21 +19,221 @@
     <main>
       <div class="phone-container">
         <div class="screen">
-          <div class="screen-header"></div>
-          <div class="screen-body"></div>
-          <div class="navigation"></div>
+          <div class="screen-header">
+            <button id="openMenu"><i class="bi bi-list"></i></button>
+            <div class="logo">
+              <img src="images/Icona_Bianco_RGB.png" />
+              <span>CDS</span>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="custom-offcanvas">
+              <div class="custom-offcanvas-panel menu">
+                <h5>rosso srl</h5>
+                <ul>
+                  <li class="menuItem ordersBtn">
+                    <a href="#"><i class="bi bi-files"></i><span>Ordini</span></a>
+                  </li>
+                  <li class="menuItem assistenzaBtn">
+                    <a href="#"><i class="bi bi-chat-dots"></i><span>Assistenza</span></a>
+                  </li>
+                  <li class="menuItem">
+                    <a href="#"><i class="bi bi-box-arrow-right"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+                <div class="menu-info">
+                  <span class="order-title">Ordine in corso</span>
+                  <div class="order-info">
+                    <span>Centro revisioni</span>
+                    <span><b>p</b>3.500 kg</span>
+                    <span>Novate Milanese</span>
+                    <a href="#" id="goToOrder"><span>Vai all'ordine</span><i class="bi bi-arrow-up-right-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-offcanvas-backdrop"></div>
+            </div>
+            <!-- Inizio Home -->
+            <div class="home open">
+              <h1><span>Benvenuto in</span><span>NomeApplicazione</span></h1>
+              <h2><i class="bi bi-truck"></i><span>Targa registrata</span><span>FL728JV</span></h2>
+              <h3>
+                <div class="assistenzaBtn"><i class="bi bi-chat-dots"></i><span>Richiedi assistenza</span></div>
+              </h3>
+            </div>
+            <!-- Fine Home -->
+            <!--Inizio ordini-->
+            <div class="orders">
+              <h1>Ordini disponibili</h1>
+              <h2><span>Pneumatici</span><span>piccoli</span></h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Produttore</th>
+                    <th>Peso (kg)</th>
+                    <th>Città</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Centro revisioni</td>
+                    <td>3.500</td>
+                    <td>Novate Milanese (MI)</td>
+                  </tr>
+                  <tr>
+                    <td>Caraglio Autoriparazioni</td>
+                    <td>1.500</td>
+                    <td>Roccavione (CN)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2><span>Pneumatici</span><span>medi</span></h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Produttore</th>
+                    <th>Peso (kg)</th>
+                    <th>Città</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gommauto Ambro</td>
+                    <td>10.000</td>
+                    <td>Pioltello (MI)</td>
+                  </tr>
+                  <tr>
+                    <td>Autotecnica Varese</td>
+                    <td>3.000</td>
+                    <td>Casciago (VA)</td>
+                  </tr>
+                  <tr>
+                    <td>Pneumatici S.P.A.</td>
+                    <td>5.000</td>
+                    <td>Chiampo (VI)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2><span>Pneumatici</span><span>grandi</span></h2>
+              <span class="no-orders">Nessun ordine ricevuto</span>
+              <div class="select-order">
+                <label class="form-label">Seleziona l'ordine che desideri evadere</label>
+                <select class="form-select">
+                  <option selected>Centro revisioni</option>
+                  <option>Caraglio Autoriparazioni</option>
+                  <option>Gommauto Ambro</option>
+                  <option>Autotecnica Varese</option>
+                  <option>Pneumatici S.P.A.</option>
+                </select>
+                <button class="btn btn-primary" id="percorso">Avvia percorso</button>
+              </div>
+            </div>
+            <!--Fine ordini-->
+            <!--Inizio Percorso-->
+            <div class="percorso">
+              <div id="destinazione">Arrivo a destinazione</div>
+              <img src="images/sample_map.jpg" />
+            </div>
+            <!--Fine Percorso-->
+            <!--Inizio compilazione-->
+            <div class="compilazione">
+              <form>
+                <label class="form-label" for="eva">Fattibilità ordine</label>
+                <div class="evadibile" id="#eva">
+                  <span class="evadibile-si ok">Evadibile</span>
+                  <span class="evadibile-no">Non evadibile</span>
+                </div>
+                <label class="form-label" for="foto">Compilazione FIR</label>
+                <div class="photo-box hidden">
+                  <div class="row row-cols-3">
+                    <div class="col p-2"><img src="images/formulario_01.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_02.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_03.png" /><span>X</span></div>
+                  </div>
+                </div>
+                <span class="avvia-fotocamera"><i class="bi bi-camera"></i></span>
+                <label class="form-label" for="fotoNc">Non conformità</label>
+                <div class="photo-box-nc hidden">
+                  <div class="row row-cols-3">
+                    <div class="col p-2"><img src="images/formulario_01.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_02.png" /><span>X</span></div>
+                    <div class="col p-2"><img src="images/formulario_03.png" /><span>X</span></div>
+                  </div>
+                </div>
+                <span class="avvia-fotocamera-nc"><i class="bi bi-camera"></i></span>
+                <textarea class="form-control" id="note" rows="3" placeholder="Inserisci qui eventuali note..."></textarea>
+                <div class="w-100 d-flex justify-content-end mt-4">
+                  <button id="inviaFir" class="btn btn-primary text-white">Invia</button>
+                </div>
+              </form>
+            </div>
+            <!--Fine compilazione-->
+            <!--Inizio pagina ordine-->
+            <div class="pagina-ordine">
+              <div class="w-100 d-flex justify-content-center flex-column py-3 px-3 gap-3">
+                <button id="avviaPercorsoDaOrdine" class="btn btn-info text-white">Avvia percorso</button>
+                <button id="inviaFirDaOrdine" class="btn btn-primary text-white">Vai alla compilazione del formulario</button>
+              </div>
+              <h2>ordine</h2>
+              <h3>#PFU-00002683</h3>
+              <h2>produttore</h2>
+              <h3>centro revisioni</h3>
+              <h2>tipo pneumatici</h2>
+              <h3>piccoli</h3>
+              <h2>indirizzo</h2>
+              <h3>via bollate, 41</h3>
+              <h2>cap</h2>
+              <h3>20026</h3>
+              <h2>città</h2>
+              <h3>novate milanese</h3>
+              <h2>provincia</h2>
+              <h3>milano</h3>
+              <h2>telefono</h2>
+              <h3>02 354 4753<i class="bi bi-telephone-fill"></i><span>Chiama</span></h3>
+            </div>
+            <!--Fine pagina ordine-->
+            <!--Inizio assistenza-->
+            <div class="assistenza">
+              <div class="chat-view">
+                <span class="assistente">Ciao, il tuo numero di ordine è <span>#PFU-00002683</span>, come possio aiutarti?</span>
+                <span class="operatore"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis totam provident quis, iure natus minus veniam at temporibus mollitia
+                  corrupti quos recusandae dolores quo maxime porro animi quidem. Adipisci, dolorum!</span
+                >
+                <span class="assistente">Ok un attimo che verifico...</span>
+                <span class="assistente">Devi fare Y</span>
+                <span class="operatore">Ok grazie</span>
+                <span class="assistente">Hai risolto il problema?</span>
+                <span class="operatore">Lorem ipsum dolor sit dio iure. Rem odio illum amet.</span>
+                <span class="assistente">Lorem ipsum dolor sit amet consectetur adipisicing elist quo, ex quas neque asperiores officiis quam harum!</span>
+                <span class="operatore">Ok grazie</span>
+              </div>
+              <div class="chatbox">
+                <input type="text" class="form-control" />
+                <span><i class="bi bi-send-fill"></i></span>
+              </div>
+            </div>
+            <!--Fine assistenza-->
+          </div>
+
+          <div class="navigation">
+            <a href="#" class="homeBtn"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#" class="ordersBtn"><i class="bi bi-files"></i></a>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer></footer>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <!-- BootStrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&loading=async" async defer></script>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
