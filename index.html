@@ -19,14 +19,34 @@
     <main>
       <div class="phone-container">
         <div class="screen">
-          <div class="screen-header"></div>
-          <div class="screen-body"></div>
-          <div class="navigation"></div>
+          <div class="screen-header">
+            <div class="logo">
+              <img src="images/Icona_Bianco_RGB.png" />
+            </div>
+            <span>CDS</span>
+          </div>
+          <div class="screen-body">
+            <button id="openMenu" class="btn btn-primary">Apri Menu</button>
+
+            <div class="custom-offcanvas">
+              <div class="custom-offcanvas-panel">
+                <h5>Menu</h5>
+                <button id="closeMenu" class="btn btn-sm btn-secondary">Chiudi</button>
+                <p>Contenuto del menu laterale.</p>
+              </div>
+              <div class="custom-offcanvas-backdrop"></div>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <a href="#"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-upc-scan"></i></a>
+            <a href="#"><i class="bi bi-files"></i></a>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer></footer>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <!-- BootStrap JS -->
