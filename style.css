@@ -209,6 +209,84 @@ body {
   opacity: 1;
 }
 
+.custom-offcanvas-panel.menu {
+  padding: 0;
+  gap: 0;
+}
+.custom-offcanvas-panel.menu h5, .custom-offcanvas-panel.menu .h5 {
+  margin: 0 !important;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-bottom: 1px solid #c8c3b9;
+  font-size: 1.2rem;
+}
+.custom-offcanvas-panel.menu ul {
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.custom-offcanvas-panel.menu ul li {
+  list-style: none;
+}
+.custom-offcanvas-panel.menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #46413c;
+  font-size: 0.9rem;
+}
+.custom-offcanvas-panel.menu ul li a i {
+  color: #ff5a1e;
+  font-size: 1.2rem;
+}
+.custom-offcanvas-panel.menu .menu-info {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.custom-offcanvas-panel.menu .menu-info .order-title {
+  font-size: 0.7rem;
+  color: #ff5a1e;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-block: 1px solid #ff5a1e;
+  padding-block: 1rem;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info span {
+  font-size: 0.9rem;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info span:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info span:nth-child(2) {
+  color: #6c757d;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info span:nth-child(2) b {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff5a1e;
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.5rem;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info span:last-child {
+  color: #6c757d;
+  font-size: 0.7rem;
+}
+.custom-offcanvas-panel.menu .menu-info .order-info a {
+  color: #ff5a1e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
