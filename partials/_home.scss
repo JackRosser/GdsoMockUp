@@ -1,0 +1,53 @@
+.home {
+  &.close {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  & h1,
+  & h2,
+  & h3 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & h1 {
+    & span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      &:last-child {
+        color: $primary;
+      }
+    }
+  }
+
+  & h2 {
+    & span {
+      font-size: 0.9rem;
+      &:last-child {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  & h3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50px;
+    & span {
+      font-size: 1rem;
+    }
+    &:active {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}
