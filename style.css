@@ -101,13 +101,13 @@ body {
 .screen::after {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 80px;
   height: 15px;
   background-color: #46413c;
-  top: 0.5rem;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 .screen .screen-header {
   width: 100%;
