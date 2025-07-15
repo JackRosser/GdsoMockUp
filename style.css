@@ -557,6 +557,9 @@ body {
   color: #ff5a1e;
   margin-left: 0.5rem;
 }
+.pagina-ordine h3:last-child, .pagina-ordine .h3:last-child {
+  margin-bottom: 2rem;
+}
 
 .assistenza {
   width: 100%;

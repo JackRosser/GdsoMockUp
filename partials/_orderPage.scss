@@ -25,5 +25,8 @@
       color: $primary;
       margin-left: 0.5rem;
     }
+    &:last-child {
+      margin-bottom: 2rem;
+    }
   }
 }
